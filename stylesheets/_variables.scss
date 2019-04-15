@@ -1,0 +1,215 @@
+$gray: #424242;
+$yellow: #FFD366;
+$m: #86D73F; //正常
+$s: #31BAF9; //過輕
+$l: #FF982D; //過重
+$xl:#FF6C03; //輕度肥胖、中度肥胖
+$xxl: #FF1200; //重度肥胖
+
+@mixin bmi-btn {
+  position:relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+@mixin loop {
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 500px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+}
+
+//bmilist
+.m {
+  border-left: 6px solid $m;
+}
+
+.s {
+  border-left: 6px solid $s;
+}
+
+.l {
+  border-left: 6px solid $l;
+}
+
+.xl {
+  border-left: 6px solid $xl;
+}
+
+.xxl {
+  border-left: 6px solid $xxl;
+}
+
+//btn event
+.m-p {
+  color: $m;
+  margin-left: 20px;
+  font-size: 30px;
+  @media (max-width:600px) {
+    display: none;
+    
+  }
+}
+
+.s-p {
+  color: $s;
+  margin-left: 20px;
+  font-size: 30px;
+  @media (max-width:600px) {
+    display: none;
+    
+  }
+}
+
+.l-p {
+  color: $l;
+  margin-left: 20px;
+  font-size: 30px;
+
+  @media (max-width:600px) {
+    display: none;
+    
+  }
+}
+
+.xl-p {
+  color: $xl;
+  margin-left: 20px;
+  font-size: 30px;
+  @media (max-width:600px) {
+    display: none;
+    
+  }
+}
+
+.xxl-p {
+  color: $xxl;
+  margin-left: 20px;
+  font-size: 30px;
+  @media (max-width:600px) {
+    display: none;
+    
+  }
+}
+
+//btn color
+.m-bmi-btn {
+  @include bmi-btn();
+  border: 6px solid $m;
+  color: $m;
+
+  p:nth-child(1) {
+    font-size: 32px;
+    margin: 5px 0;
+  }
+
+  p:nth-child(2) {
+    font-size: 16px;
+  }
+
+}
+
+.m-loop {
+  @include loop();
+  background-color: $m;
+}
+
+.s-bmi-btn {
+  @include bmi-btn();
+  border: 6px solid $s;
+  color: $s;
+
+  p:nth-child(1) {
+    font-size: 32px;
+    margin: 5px 0;
+  }
+
+  p:nth-child(2) {
+    font-size: 16px;
+  }
+}
+
+.s-loop {
+  @include loop();
+  background-color: $s;
+}
+
+.l-bmi-btn {
+  @include bmi-btn();
+  border: 6px solid $l;
+  color: $l;
+
+  p:nth-child(1) {
+    font-size: 32px;
+    margin: 5px 0;
+  }
+
+  p:nth-child(2) {
+    font-size: 16px;
+  }
+
+}
+
+.l-loop {
+  @include loop();
+  background-color: $l;
+}
+
+.xl-bmi-btn {
+  @include bmi-btn();
+  border: 6px solid $xl;
+  color: $xl;
+
+  p:nth-child(1) {
+    font-size: 32px;
+    margin: 5px 0;
+  }
+
+  p:nth-child(2) {
+    font-size: 16px;
+  }
+}
+
+.xl-loop {
+  @include loop();
+  background-color: $xl;
+}
+
+.xxl-bmi-btn {
+  @include bmi-btn();
+  border: 6px solid $xxl;
+  color: $xxl;
+
+  p:nth-child(1) {
+    font-size: 32px;
+    margin: 5px 0;
+  }
+
+  p:nth-child(2) {
+    font-size: 16px;
+  }
+}
+
+.xxl-loop {
+  @include loop();
+  background-color: $xxl;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="body">
+    <header class="calculator">
+      <div class="logo-box">
+        <h1 style="display: none;">BMI Calculator</h1>
+        <div class="logo bg-cover"></div>
+      </div>
+      <div class="bmi">
+        <label for="height">身高 cm</label>
+        <input type="number" ref="clearText" id="height" placeholder="請輸入身高" style="margin-bottom: 25px;">
+        <label for="weight">體重 kg</label>
+        <input type="number" ref="clearText" id="weight" placeholder="請輸入體重">
+      </div>
+      <div class="bmi-btn-box">
+        <div class="bmi-btn-show">
+          <a class="bmi-btn" id="bmi-btn-on" href="#">看結果</a>
+        </div>
+        <div class="bmi-btn-none">
+          <a class="bmi-btn" id="bmi-btn-close" href="#">
+            <p id="bmi-number">99.99</p>
+            <p>BMI</p>
+            <div id="loopClass" class="loop">
+              <div class="bg-cover" style="background-image: url('../img/icons_loop.png');width: 15px;height: 15px;">
+              </div>
+            </div>
+          </a>
+          
+          <p id="bmiMassName"></p>
+        </div>
+      </div>
+    </header>
+    <section class="bmilist-box">
+      <h2>BMI記錄</h2>
+      <ul id="bmilist" class="bmilist">
+        <li class="m">
+          <p>理想</p>
+          <p><span>BMI</span>XX.XX</p>
+          <p><span>weight</span>XXkg</p>
+          <p><span>height</span>XXXcm</p>
+          <span>12-31-9999</span>
+        </li>
+      </ul>
+      <ul class="bmilist">
+        <li class="m">
+          <p>理想</p>
+          <p><span>BMI</span>XX.XX</p>
+          <p><span>weight</span>XXkg</p>
+          <p><span>height</span>XXXcm</p>
+          <span>12-31-9999</span>
+        </li>
+      </ul>
+
+    </section>
+    <footer>
+      <div class="footer">
+        <img src="img/BMICLogo.png" style="width: 50px;height: 50px;">
+      </div>
+    </footer>
+  </div>
+
+  <!-- JS file -->
+  <script src="js/all.js"></script>
+</body>
+
+</html>
